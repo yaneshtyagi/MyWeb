@@ -1,0 +1,20 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!-- Child Layout content -->
+<div>
+    <div class="col-md-3 pull-right">
+        <h2>Interesting Links</h2>
+        <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Everything Else</a></li>
+            <li><a href="#">Spirituality</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Videos</a></li>
+        </ul>
+    </div>
+    <div class="col-md-9">
+        @RenderBody()
+    </div>
+</div>

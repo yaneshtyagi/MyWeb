@@ -1,9 +1,11 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <meta name="description" content="This is personal website of Yanesh Tyagi on Delivery Management with Agile and Scrum, Programming in ASP.net and C#, Software Solution Architecture, Travelling in India and Photography.">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
+    @*<title>@ViewBag.Title</title>*@
+    <title>Yanesh Tyagi::Personal Website</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -16,26 +18,113 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", null, new { @class = "navbar-brand" })
+                @Html.ActionLink("Yanesh Tyagi", "Index", "Home", null, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>
+                    <li><a href="~/wordpress">Blog</a></li>
+                    <li>@Html.ActionLink("Projects", "Index", "Projects", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Everything", "Index", "Everything", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Spirituality", "Index", "Spirituality", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Books", "Index", "Books", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Videos", "Index", "Videos", new { area = "" }, null)</li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+        <div class="col-md-12">
+            @RenderBody()
+        </div>
+
     </div>
+    <footer>
+        <div class="col-md-2">
+            <h3>Writings</h3>
+            <ul>
+                <li><a href="http://weblogs.asp.net/yaneshtyagi">On programming</a></li>
+                <li><a href="http://yaneshtyagi.blogspot.com">On travel and nature</a></li>
+                <li><a href="http://yaneshtyagi.wordpress.com">On management</a></li>
+                <li><a href="http://en.wikipedia.org/wiki/User:Yaneshtyagi">On wikipedia</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2">
+            <h3>Visuals</h3>
+            <ul>
+                <li><a href="http://youtube.com/yaneshtyagi">You Tube</a></li>
+                <li><a href="http://instagram.com/yaneshtyagi">Instagram</a></li>
+                <li><a href="http://www.pinterest.com/yaneshtyagi/">Pinterest</a></li>
+                <li><a href="https://www.flickr.com/photos/25194915@N06/">Photo Stream</a></li>
+                <li><a href="http://prezi.com/user/bmujwjzmmvbo/">Presentations</a></li>
+                <li><a href="http://www.slideshare.net/yaneshtyagi">Slides</a></li>
+
+            </ul>
+        </div>
+        <div class="col-md-2">
+            <h3>Social</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/yaneshtyagi">facebook</a></li>
+                <li><a href="https://twitter.com/yaneshtyagi">twitter</a></li>
+                <li><a href="https://plus.google.com/+YaneshTyagi">google+</a></li>
+                <li><a href="https://www.diigo.com/user/yaneshtyagi">diigo</a></li>
+                <li><a href="https://klout.com/yaneshtyagi">klout</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2">
+            <h3>Profesional</h3>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/yaneshtyagi">linkedin</a></li>
+                <li><a href="http://about.me/yaneshtyagi">about me</a></li>
+                <li><a href="http://productivity.stackexchange.com/users/439/matrix">personal productivity</a></li>
+                <li><a href="http://stackoverflow.com/users/226181/matrix">programmer's community</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2">
+            <h3>Leisure</h3>
+            <ul>
+                <li><a href="http://www.librarything.com/profile/Yanesh.Tyagi">library thing</a></li>
+                <li><a href="http://www.raaga.com/lounge/?4891919">raaga</a></li>
+                <li><a href="https://www.goodreads.com/user/show/30618777-yanesh-tyagi">good reads</a></li>
+                <li><a href="https://kindle.amazon.com/profile/Yanesh-Tyagi/4948936" title="Yanesh Tyagi's kindle notes & highlights">my kindle</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2">
+            <h3>Open Source</h3>
+            <ul>
+                <li><a href="https://github.com/yaneshtyagi">github</a></li>
+                <li><a href="https://code.google.com/p/dnvc/" title="Open source project to check installed .net version.">dnvc - goodle code</a></li>
+                <li><a href="http://xcomp.codeplex.com/" title="A light-weight tool to compare two excel sheets">xcomp</a></li>
+                <li><a href="http://keepfocused.codeplex.com/" title="An enhanced tool for Time Management using Pomodoro Technique">keepfocused</a></li>
+                <li><a href="http://social.msdn.microsoft.com/Profile/yanesh%20tyagi/activity">MSDN</a></li>
+                <li><a href="https://workspaces.codeproject.com/yaneshtyagi">Code Project</a></li>
+            </ul>
+        </div>
+        <hr />
+
+        <div class="col-lg-10" style="background-color:#eeeeee; width:100%;">
+            <h3>Popular Pages</h3>
+            <ul class="list-group">
+                <li><a href="http://www.librarything.com/profile/Yanesh.Tyagi">Top 20 programming books that every programmer must read</a></li>
+                <li><a href="/Articles/History_Of_Tyagi_Samaj.aspx">History of Tyagi Samaj - a research by Dr. N.C. Tyagi</a></li>
+                <li><a href="/Articles/Monney-Manager-Ex.aspx">Money Manager Ex - a great free personal finance management software</a></li>
+                <li><a href="/Gutuji">My Guruji - a biography of Swami Govindanand Tirth as told to me</a></li>
+                <li><a href="/Guruji/Swami_Shivom_Tirth Maharaj.aspx" title="Swami Shivom Tirth Ji Maharaj">Swami Shivom Tirth Ji Maharaj - what I learned about him</a></li>
+                <li><a href="http://www.raaga.com/lounge/?4891919">Yoga Shree Peeth Ashram - a spiritual place on the bank of river Ganges in Himalayas</a></li>
+                <li><a href="/Guruji/Swami_Vishnu_Tirth.aspx">Swami Shivom Tirth Maharaj who reinvented the art of shaktipaat</a></li>
+                <li><a href="/Guruji/SwamiMrityunjayTirth.aspx">Swami Mritunjay Tirth Maharaj</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-12 pull-right bottom-right" style="margin-bottom:10px;">
+            <p>&copy; @DateTime.Now.Year - Yanesh Tyagi</p>
+        </div>
+        &nbsp;
+    </footer>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>
 </html>
+
