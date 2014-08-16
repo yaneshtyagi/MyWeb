@@ -74,3 +74,25 @@ footer h3{
 .text-justify{
     text-align:justify;
 }
+
+article footer{
+    font-size:smaller;
+    background-color:#ffffff;
+    line-height:1;
+}
+
+article header{
+    font-size:smaller;
+}
+
+article aside{
+    font-size:smaller;
+}
+
+.side-box{
+    margin:5px;
+    padding:5px;
+    border:solid 1px #808080;
+    border-radius:5px;
+    background-color:#eeeeee;
+}

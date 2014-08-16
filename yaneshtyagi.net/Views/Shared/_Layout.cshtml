@@ -1,11 +1,16 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta name="description" content="This is personal website of Yanesh Tyagi on Delivery Management with Agile and Scrum, Programming in ASP.net and C#, Software Solution Architecture, Travelling in India and Photography.">
+    @{
+        ViewBag.GeneralDescription = "This is personal website of Yanesh Tyagi on Delivery Management with Agile and Scrum, Programming in ASP.net and C#, Software Solution Architecture, Travelling in India and Photography.";
+        ViewBag.Description = ViewBag.Description ?? ViewBag.GeneralDescription;
+        }
+    <meta name="description" content="@ViewBag.Description">
+    <meta name="author" content="Yanesh Tyagi">
+    <meta name="keywords" content="@ViewBag.Keywords">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    @*<title>@ViewBag.Title</title>*@
-    <title>Yanesh Tyagi::Personal Website</title>
+    <title>Yanesh Tyagi:: @ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
